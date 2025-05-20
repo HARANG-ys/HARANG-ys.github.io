@@ -51,7 +51,9 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(ambientLight);
 const pointLight = new THREE.PointLight(0xffffff, 1.5, 500);
 scene.add(pointLight);
-
+const directionalLight = new THREE.DirectionalLight(0xffffff, 2.0); // 그림자 추가
+directionalLight.position.set(50, 40, 0);
+scene.add(directionalLight);
 
 // GUI
 const gui = new GUI();
