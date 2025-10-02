@@ -7,12 +7,11 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
-  // FIXME: allow floating point numbers!
-  int lhs = atoi(argv[1]);
-  char op = argv[2][0];
-  int rhs = atoi(argv[3]);
+  double lhs = strtod(argv[1], NULL);
+  char   op = argv[2][0];
+  double rhs = strtod(argv[3], NULL);
 
-  int result;
+  double result;
   switch (op) {
   case '+':
     result = lhs + rhs;
