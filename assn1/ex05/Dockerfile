@@ -12,6 +12,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 
-COPY --from=build /src/server /app/server
-EXPOSE 8080
-CMD ["/app/server"]
+COPY --from=build /src/main /app/main
+CMD ["/app/main"]
