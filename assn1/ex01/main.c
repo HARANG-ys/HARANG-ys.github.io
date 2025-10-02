@@ -23,11 +23,11 @@ int main(int argc, char *argv[]) {
     result = lhs * rhs;
     break;
   case '/':
-    if (rhs == 0) {
-      (void)printf("Error: division by zero\n");
-      return 0;
-    }
-    result = lhs / rhs;
+    if (rhs == 0.0) {
+        (void)printf("Error: division by zero\n");
+        return 0;
+      }
+      result = lhs / rhs;
     break;
     
   default:

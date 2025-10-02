@@ -1,5 +1,5 @@
 function greet(str) {
-    console.log(`Hellp, ${str}!`);
+    console.log(`Hello, ${str}!`);
 }
 
 console.log("Hello, world!");
